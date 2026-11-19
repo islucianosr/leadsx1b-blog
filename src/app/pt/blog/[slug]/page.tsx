@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: "article",
       publishedTime: `${post.date}T08:00:00+00:00`,
       authors: [post.author.name],
-      images: [{ url: post.seo.ogImage, width: 1200, height: 630, alt: post.title }]
+      images: [{ url: post.seo.ogImage.startsWith("http") ? post.seo.ogImage : `${SITE_CONFIG.blogDomain}${post.seo.ogImage}`, width: 1200, height: 630, alt: post.title }]
     }
   };
 }
@@ -148,6 +148,10 @@ export default function BlogPostPtPage({ params }: PageProps) {
             </div>
           </div>
         </header>
+
+        <figure className="max-w-5xl overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-sm">
+          <img src={post.coverImage} alt={post.title} width={1200} height={630} className="aspect-[1200/630] w-full object-cover" />
+        </figure>
 
         {/* Article Layout with Sidebar */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">

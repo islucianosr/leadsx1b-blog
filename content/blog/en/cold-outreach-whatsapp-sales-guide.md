@@ -17,7 +17,7 @@ seo:
   metaTitle: "How to Prospect on WhatsApp Without Getting Banned | Leadsx1B"
   metaDescription: "Master WhatsApp cold outreach: phone number warming protocols, anti-ban safety rules, high-converting copy frameworks, and automated CRM pipelines."
   keywords: ["whatsapp sales outreach", "cold message whatsapp without ban", "whatsapp b2b prospecting", "whatsapp sales script", "leadsx1b crm"]
-  ogImage: "/images/og-whatsapp-sales.png"
+  ogImage: "/images/blog-whatsapp-sales.png"
 ---
 
 WhatsApp has emerged as the most lucrative direct communication channel in global business. With over 2 billion active monthly users and average open rates hovering at 98%, conversations started on WhatsApp move deals forward 4x faster than traditional email sequences.

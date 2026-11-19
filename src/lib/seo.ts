@@ -4,10 +4,9 @@ export const SITE_CONFIG = {
   name: "Leadsx1B",
   legalName: "Leadsx1B Inc.",
   domain: "https://www.leads1xb.pro",
-  blogDomain: process.env.NEXT_PUBLIC_BLOG_URL || "https://www.leads1xb.pro",
+  blogDomain: (process.env.NEXT_PUBLIC_BLOG_URL || "https://www.leads1xb.pro").replace(/\/+$/, ""),
   twitterHandle: "@leadsx1b",
-  defaultOgImage: "https://www.leads1xb.pro/images/leadsx1b-og-cover.png",
-  logoUrl: "https://www.leads1xb.pro/images/logo.png",
+  defaultOgImage: "https://www.leads1xb.pro/images/blog-google-maps-lead-gen.png",
   defaultDescriptions: {
     en: "The #1 AI platform to extract verified B2B leads from Google Maps in under 3 minutes, organize in a visual CRM, and reach out on WhatsApp.",
     pt: "A plataforma #1 com IA para extrair leads verificados do Google Maps em menos de 3 minutos, organizar em CRM visual e disparar no WhatsApp."
@@ -216,10 +215,6 @@ export function generateJsonLd(post: BlogPost) {
       "@type": "Organization",
       "name": SITE_CONFIG.name,
       "url": SITE_CONFIG.domain,
-      "logo": {
-        "@type": "ImageObject",
-        "url": SITE_CONFIG.logoUrl
-      }
     },
     "keywords": post.seo.keywords.join(", ")
   };

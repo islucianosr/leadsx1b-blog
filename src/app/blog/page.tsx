@@ -83,26 +83,14 @@ export default function BlogEnPage() {
                     +5,000 commercial leaders
                   </p>
                   <p className="text-[11px] text-slate-500">
-                    Read our weekly outbound teardowns
+                    Practical guides for prospecting and sales
                   </p>
                 </div>
               </div>
 
-              <form className="space-y-2">
-                <div className="flex gap-2">
-                  <input
-                    type="email"
-                    placeholder="you@company.com"
-                    className="flex-1 rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:border-violet-600 focus:outline-none"
-                  />
-                  <button
-                    type="submit"
-                    className="rounded-lg bg-violet-600 px-4 py-2 text-xs font-bold text-white hover:bg-violet-700 transition shrink-0"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-              </form>
+              <a href={SITE_CONFIG.domain} className="inline-flex rounded-lg bg-violet-600 px-4 py-2 text-xs font-bold text-white transition hover:bg-violet-700">
+                Explore Leadsx1B
+              </a>
             </div>
           </div>
         </section>
@@ -225,26 +213,16 @@ export default function BlogEnPage() {
           <div className="lg:col-span-5 rounded-2xl bg-violet-600 p-8 text-white flex flex-col justify-between space-y-6 shadow-xl shadow-violet-600/20">
             <div className="space-y-3">
               <h3 className="text-2xl font-bold leading-tight">
-                Stay in the loop with our latest drops.
+                Explore ideas to improve your outbound process.
               </h3>
               <p className="text-xs text-violet-100 leading-relaxed">
-                Actionable outbound teardowns, WhatsApp playbooks, and pipeline architectures straight to your inbox.
+                Browse practical WhatsApp playbooks, lead generation guides, and sales pipeline ideas.
               </p>
             </div>
 
-            <form className="space-y-3">
-              <input
-                type="email"
-                placeholder="you@company.com"
-                className="w-full rounded-xl border border-violet-400/40 bg-violet-700/60 px-4 py-3 text-xs text-white placeholder:text-violet-200 focus:bg-violet-800 focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="w-full rounded-xl bg-white py-3 text-xs font-bold text-violet-700 hover:bg-violet-50 transition shadow-md"
-              >
-                Subscribe to Publication
-              </button>
-            </form>
+            <a href={SITE_CONFIG.domain} className="inline-flex w-full items-center justify-center rounded-xl bg-white py-3 text-sm font-bold text-violet-700 shadow-md transition hover:bg-violet-50">
+              Explore the platform
+            </a>
           </div>
         </section>
       </main>

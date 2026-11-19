@@ -17,7 +17,7 @@ seo:
   metaTitle: "Como Extrair Leads B2B do Google Maps com IA em Minutos | Leadsx1B"
   metaDescription: "Guia definitivo para extrair leads verificados do Google Maps com Inteligência Artificial. Capture números de WhatsApp, e-mails e sincronize no CRM."
   keywords: ["extrair leads google maps", "prospeccao b2b", "ia geracao de leads", "disparo whatsapp", "leads qualificados"]
-  ogImage: "/images/og-google-maps-lead-gen.png"
+  ogImage: "/images/blog-google-maps-lead-gen.png"
 ---
 
 Encontrar clientes em potencial no B2B costumava exigir dezenas de horas de trabalho manual exaustivo. Pré-vendedores (SDRs) passavam até 65% do dia copiando e colando dados de catálogos, checando se números de telefone funcionavam e preenchendo planilhas confusas em vez de conversar com quem realmente toma decisões.

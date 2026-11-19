@@ -25,6 +25,13 @@ Article slugs are defined in each Markdown file's frontmatter. `alternateSlug` c
 
 To publish an article, add its Markdown file under `content/blog/en/` or `content/blog/pt/`, commit it, and push to the production branch. The connected Vercel project rebuilds the article pages and discovery files from those sources.
 
+## Legal pages and article covers
+
+- English legal pages: `/privacy` and `/terms`.
+- Portuguese legal pages: `/pt/privacidade` and `/pt/termos`.
+- These notices describe the editorial blog only. The Leadsx1B application needs its own policy and service terms based on its actual data flows, payment provider, and operating entity.
+- Article covers are editable SVG artwork in `public/images/`; matching PNG exports are used for social previews. Article `coverImage` and `seo.ogImage` paths are set in the Markdown frontmatter.
+
 ## Requirements
 
 - Node.js 18.17 or newer

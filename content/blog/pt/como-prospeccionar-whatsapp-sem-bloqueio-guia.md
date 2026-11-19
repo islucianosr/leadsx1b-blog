@@ -17,7 +17,7 @@ seo:
   metaTitle: "Como Prospeccionar no WhatsApp sem Ser Bloqueado | Leadsx1B"
   metaDescription: "Guia completo de Cold Outreach no WhatsApp: aquecimento de chip, regras anti-ban, scripts validados de conversão e automação segura com Leadsx1B."
   keywords: ["whatsapp sales", "como prospeccionar no whatsapp", "bloqueio whatsapp prospecção", "scripts whatsapp outbound", "cold messaging"]
-  ogImage: "/images/og-whatsapp-sales.png"
+  ogImage: "/images/blog-whatsapp-sales.png"
 ---
 
 O WhatsApp se transformou no canal de vendas mais potente do Brasil e do mundo. Com mais de 2 bilhões de usuários ativos globais e mais de 147 milhões de brasileiros conectados diariamente, o mensageiro é onde os negócios realmente acontecem.

@@ -17,7 +17,7 @@ seo:
   metaTitle: "Como Estruturar um Pipeline de Vendas no CRM B2B | Leadsx1B"
   metaDescription: "Estruture um CRM visual de alta performance: etapas recomendadas, métricas de conversão e automação de follow-ups integrados ao WhatsApp."
   keywords: ["crm pipeline vendas", "funil de vendas b2b", "kanban de vendas", "gestao de leads crm", "follow up whatsapp"]
-  ogImage: "/images/og-crm-pipeline.png"
+  ogImage: "/images/blog-crm-pipeline.png"
 ---
 
 Mais de 70% das vendas B2B são perdidas não por falta de interesse do cliente, mas por ausência de follow-up no momento certo. Sem um CRM visual integrado à sua ferramenta de prospecção, seus vendedores perdem tempo navegando entre abas de navegador e esquecem propostas abertas.

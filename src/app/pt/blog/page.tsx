@@ -84,26 +84,14 @@ export default function BlogPtPage() {
                     +5.000 líderes comerciais
                   </p>
                   <p className="text-[11px] text-slate-500">
-                    Recebem nossas análises semanais
+                    Guias práticos de prospecção e vendas
                   </p>
                 </div>
               </div>
 
-              <form className="space-y-2">
-                <div className="flex gap-2">
-                  <input
-                    type="email"
-                    placeholder="seu.email@empresa.com"
-                    className="flex-1 rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:border-violet-600 focus:outline-none"
-                  />
-                  <button
-                    type="submit"
-                    className="rounded-lg bg-violet-600 px-4 py-2 text-xs font-bold text-white hover:bg-violet-700 transition shrink-0"
-                  >
-                    Inscrever
-                  </button>
-                </div>
-              </form>
+              <a href={SITE_CONFIG.domain} className="inline-flex rounded-lg bg-violet-600 px-4 py-2 text-xs font-bold text-white transition hover:bg-violet-700">
+                Conheça o Leadsx1B
+              </a>
             </div>
           </div>
         </section>
@@ -226,26 +214,16 @@ export default function BlogPtPage() {
           <div className="lg:col-span-5 rounded-2xl bg-violet-600 p-8 text-white flex flex-col justify-between space-y-6 shadow-xl shadow-violet-600/20">
             <div className="space-y-3">
               <h3 className="text-2xl font-bold leading-tight">
-                Fique por dentro das melhores táticas.
+                Ideias para melhorar a sua prospecção.
               </h3>
               <p className="text-xs text-violet-100 leading-relaxed">
-                Receba novos scripts de WhatsApp, parâmetros de busca do Google Maps e guias práticos sem nenhum spam.
+                Explore scripts de WhatsApp, pesquisas no Google Maps e guias práticos para equipas comerciais.
               </p>
             </div>
 
-            <form className="space-y-3">
-              <input
-                type="email"
-                placeholder="seu.email@empresa.com"
-                className="w-full rounded-xl border border-violet-400/40 bg-violet-700/60 px-4 py-3 text-xs text-white placeholder:text-violet-200 focus:bg-violet-800 focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="w-full rounded-xl bg-white py-3 text-xs font-bold text-violet-700 hover:bg-violet-50 transition shadow-md"
-              >
-                Quero Receber os Artigos
-              </button>
-            </form>
+            <a href={SITE_CONFIG.domain} className="inline-flex w-full items-center justify-center rounded-xl bg-white py-3 text-sm font-bold text-violet-700 shadow-md transition hover:bg-violet-50">
+              Conheça a plataforma
+            </a>
           </div>
         </section>
       </main>

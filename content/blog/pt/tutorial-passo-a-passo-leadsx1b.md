@@ -17,7 +17,7 @@ seo:
   metaTitle: "Tutorial Passo a Passo Leadsx1B: Da Extração ao WhatsApp | Leadsx1B"
   metaDescription: "Aprenda a usar a plataforma Leadsx1B: passo a passo de extração no Google Maps, enriquecimento de leads com IA e conexão com WhatsApp."
   keywords: ["tutorial leadsx1b", "como usar leadsx1b", "guia passo a passo prospeccao", "extrair empresas google maps"]
-  ogImage: "/images/og-tutorial.png"
+  ogImage: "/images/blog-tutorial-guide.png"
 ---
 
 Seja muito bem-vindo ao Leadsx1B! Este tutorial foi criado para colocar sua operação comercial para rodar hoje mesmo, em menos de 15 minutos, sem necessidade de conhecimentos técnicos avançados.

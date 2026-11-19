@@ -15,6 +15,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       alternates: { languages: { en: `${base}/blog`, pt: `${base}/pt/blog`, "x-default": `${base}/blog` } },
     },
+    {
+      url: `${base}/privacy`,
+      changeFrequency: "yearly",
+      alternates: { languages: { en: `${base}/privacy`, pt: `${base}/pt/privacidade` } },
+    },
+    {
+      url: `${base}/terms`,
+      changeFrequency: "yearly",
+      alternates: { languages: { en: `${base}/terms`, pt: `${base}/pt/termos` } },
+    },
+    {
+      url: `${base}/pt/privacidade`,
+      changeFrequency: "yearly",
+      alternates: { languages: { en: `${base}/privacy`, pt: `${base}/pt/privacidade` } },
+    },
+    {
+      url: `${base}/pt/termos`,
+      changeFrequency: "yearly",
+      alternates: { languages: { en: `${base}/terms`, pt: `${base}/pt/termos` } },
+    },
   ];
 
   const articles: MetadataRoute.Sitemap = ([...getAllPosts("en"), ...getAllPosts("pt")]).map((post) => {

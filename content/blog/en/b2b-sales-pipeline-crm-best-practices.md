@@ -17,7 +17,7 @@ seo:
   metaTitle: "Build a High-Velocity B2B Sales Pipeline in CRM | Leadsx1B"
   metaDescription: "Structure an agile visual CRM pipeline: best stage definitions, conversion metrics, and automated WhatsApp follow-up workflows."
   keywords: ["b2b sales pipeline", "crm best practices", "sales kanban board", "lead management", "whatsapp crm integration"]
-  ogImage: "/images/og-crm-pipeline.png"
+  ogImage: "/images/blog-crm-pipeline.png"
 ---
 
 Over 70% of lost B2B opportunities happen not because of budget constraints, but because sales reps fail to follow up in time. When your extraction tool is disconnected from your CRM, deals silently rot in unmonitored spreadsheets.

@@ -102,7 +102,7 @@ export function getAllPosts(locale: Locale): BlogPost[] {
         metaTitle: `${data.title} | Leadsx1B`,
         metaDescription: data.excerpt,
         keywords: [],
-        ogImage: data.coverImage || "/images/default-og.png"
+        ogImage: data.coverImage || "/images/blog-google-maps-lead-gen.png"
       }
     } as BlogPost;
   });

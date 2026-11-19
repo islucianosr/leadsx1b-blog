@@ -17,7 +17,7 @@ seo:
   metaTitle: "Extract 1,000+ B2B Leads from Google Maps in 10 Min with AI | Leadsx1B"
   metaDescription: "Step-by-step guide on how to extract verified B2B leads from Google Maps using AI. Collect WhatsApp numbers, emails, addresses, and sync directly to CRM."
   keywords: ["Google Maps lead scraper", "B2B lead generation", "AI lead extraction", "WhatsApp outreach", "local business leads"]
-  ogImage: "/images/og-google-maps-lead-gen.png"
+  ogImage: "/images/blog-google-maps-lead-gen.png"
 ---
 
 Finding qualified B2B prospects used to take dozens of hours of manual work. Sales development representatives (SDRs) spent up to 65% of their working hours scrolling directories, verifying phone numbers, and formatting spreadsheets instead of talking to decision-makers.

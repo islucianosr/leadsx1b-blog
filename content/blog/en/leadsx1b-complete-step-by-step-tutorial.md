@@ -17,7 +17,7 @@ seo:
   metaTitle: "Leadsx1B Full Step-by-Step Tutorial: Extraction to Deals | Leadsx1B"
   metaDescription: "Master Leadsx1B in 15 minutes: Google Maps lead scraping, AI contact enrichment, CRM pipeline configuration, and WhatsApp outreach."
   keywords: ["leadsx1b tutorial", "how to use leadsx1b", "google maps scraper tutorial", "whatsapp outreach setup"]
-  ogImage: "/images/og-tutorial.png"
+  ogImage: "/images/blog-tutorial-guide.png"
 ---
 
 Welcome to Leadsx1B! This step-by-step onboarding walkthrough gets your outbound revenue engine up and running in under 15 minutes without writing a single line of code.

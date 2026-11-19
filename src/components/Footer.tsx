@@ -145,13 +145,13 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-between border-t border-slate-100 pt-8 text-xs text-slate-400 gap-4">
           <p>© {new Date().getFullYear()} Leadsx1B Inc. {isPt ? "Todos os direitos reservados." : "All rights reserved."}</p>
           <div className="flex items-center gap-6">
-            <a href={SITE_CONFIG.domain} target="_blank" rel="noopener noreferrer" className="hover:text-slate-600 transition">
+            <Link href={isPt ? "/pt/privacidade" : "/privacy"} className="hover:text-slate-600 transition">
               {isPt ? "Privacidade" : "Privacy"}
-            </a>
-            <a href={SITE_CONFIG.domain} target="_blank" rel="noopener noreferrer" className="hover:text-slate-600 transition">
+            </Link>
+            <Link href={isPt ? "/pt/termos" : "/terms"} className="hover:text-slate-600 transition">
               {isPt ? "Termos" : "Terms"}
-            </a>
-            <a href={SITE_CONFIG.domain} target="_blank" rel="noopener noreferrer" className="hover:text-slate-600 transition">
+            </Link>
+            <a href="mailto:suporte@leads1xb.pro?subject=Security" className="hover:text-slate-600 transition">
               {isPt ? "Segurança" : "Security"}
             </a>
           </div>
