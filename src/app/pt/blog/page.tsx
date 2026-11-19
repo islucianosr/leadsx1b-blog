@@ -8,6 +8,7 @@ import { Header } from "../../../components/Header";
 import { Footer } from "../../../components/Footer";
 import { PostCard } from "../../../components/PostCard";
 import { SearchAndFilter } from "../../../components/SearchAndFilter";
+import { BlogJsonLd } from "../../../components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "Blog Leadsx1B — Prospecção B2B, Vendas no WhatsApp e CRM",
@@ -26,9 +27,16 @@ export const metadata: Metadata = {
     description:
       "Aprenda a estruturar operações outbound de alta conversão com IA, Google Maps e CRM integrado.",
     url: `${SITE_CONFIG.blogDomain}/pt/blog`,
-    siteName: "Leadsx1B Insights",
+    siteName: "Leadsx1B",
     locale: "pt_BR",
-    type: "website"
+    type: "website",
+    images: [{ url: SITE_CONFIG.defaultOgImage, width: 1200, height: 630, alt: "Leadsx1B Insights" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog Leadsx1B — Estratégias de prospecção e vendas B2B",
+    description: "Análises e guias práticos para equipes comerciais que usam Google Maps, IA, WhatsApp e CRM.",
+    images: [SITE_CONFIG.defaultOgImage]
   }
 };
 
@@ -43,6 +51,7 @@ export default function BlogPtPage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 antialiased flex flex-col justify-between">
+      <BlogJsonLd locale="pt" />
       <Header currentLocale="pt" alternateUrl="/blog" />
 
       <main className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 lg:px-8 space-y-16 flex-1">

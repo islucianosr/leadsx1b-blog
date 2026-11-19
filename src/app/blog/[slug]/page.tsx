@@ -3,7 +3,8 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllPosts, getPostBySlug, getRelatedPosts } from "../../../lib/blog";
-import { generateHreflangTags, generateJsonLd, SITE_CONFIG } from "../../../lib/seo";
+import { generateHreflangTags, getArticleImageUrl, SITE_CONFIG } from "../../../lib/seo";
+import { BlogJsonLd } from "../../../components/BlogJsonLd";
 import { Header } from "../../../components/Header";
 import { Footer } from "../../../components/Footer";
 import { ReadingProgressBar } from "../../../components/ReadingProgressBar";
@@ -11,6 +12,7 @@ import { TableOfContents } from "../../../components/TableOfContents";
 import { InArticleCTA } from "../../../components/InArticleCTA";
 import { BottomCTA } from "../../../components/BottomCTA";
 import { PostCard } from "../../../components/PostCard";
+import { renderMarkdown } from "../../../lib/markdown";
 
 interface PageProps {
   params: {
@@ -48,10 +50,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       siteName: SITE_CONFIG.name,
       locale: "en_US",
       type: "article",
-      publishedTime: `${post.date}T08:00:00+00:00`,
+      publishedTime: `${post.dateISO}T08:00:00.000Z`,
       authors: [post.author.name],
-      images: [{ url: post.seo.ogImage.startsWith("http") ? post.seo.ogImage : `${SITE_CONFIG.blogDomain}${post.seo.ogImage}`, width: 1200, height: 630, alt: post.title }]
-    }
+      images: [{ url: getArticleImageUrl(post), width: 1200, height: 630, alt: post.title }]
+    },
+    twitter: { card: "summary_large_image", title: `${post.title} | Leadsx1B Insights`, description: post.seo.metaDescription, images: [getArticleImageUrl(post)] }
   };
 }
 
@@ -60,8 +63,6 @@ export default function BlogPostEnPage({ params }: PageProps) {
   if (!post) notFound();
 
   const related = getRelatedPosts(post, 3);
-  const { articleSchema, breadcrumbSchema } = generateJsonLd(post);
-
   const alternatePtUrl = post.alternateSlug
     ? `/pt/blog/${post.alternateSlug}`
     : `/pt/blog`;
@@ -73,14 +74,7 @@ export default function BlogPostEnPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 antialiased flex flex-col justify-between">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <BlogJsonLd locale="en" post={post} />
 
       <ReadingProgressBar />
       <Header currentLocale="en" alternateUrl={alternatePtUrl} />
@@ -125,7 +119,7 @@ export default function BlogPostEnPage({ params }: PageProps) {
             <span className="text-slate-300">•</span>
             <span className="text-slate-500 font-medium">{post.readTime}</span>
             <span className="text-slate-300">•</span>
-            <time dateTime={post.date} className="text-slate-500">
+            <time dateTime={post.dateISO} className="text-slate-500">
               {post.date}
             </time>
           </div>
@@ -156,9 +150,9 @@ export default function BlogPostEnPage({ params }: PageProps) {
         {/* Article Layout with Sidebar */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <article className="lg:col-span-8 space-y-8 text-slate-800 leading-relaxed text-[15px]">
-            <div dangerouslySetInnerHTML={{ __html: renderCleanMarkdown(firstHalf) }} />
+            <div dangerouslySetInnerHTML={{ __html: renderMarkdown(firstHalf) }} />
             <InArticleCTA locale="en" />
-            <div dangerouslySetInnerHTML={{ __html: renderCleanMarkdown("## " + secondHalf) }} />
+            <div dangerouslySetInnerHTML={{ __html: renderMarkdown("## " + secondHalf) }} />
           </article>
 
           <aside className="hidden lg:block lg:col-span-4 sticky top-28">
@@ -192,20 +186,3 @@ export default function BlogPostEnPage({ params }: PageProps) {
   );
 }
 
-function renderCleanMarkdown(markdown: string): string {
-  let html = markdown
-    .replace(/^### (.*$)/gim, '<h3 class="text-xl font-bold mt-8 mb-3 text-slate-900">$1</h3>')
-    .replace(/^## (.*$)/gim, (_, title) => {
-      const id = title.toLowerCase().replace(/[^\w\s-]/g, "").replace(/[\s_-]+/g, "-");
-      return `<h2 id="${id}" class="text-2xl font-bold mt-10 mb-4 text-slate-900 border-b border-slate-100 pb-2">${title}</h2>`;
-    })
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.*?)\*/g, '<em>$1</em>')
-    .replace(/```json([\s\S]*?)```/g, '<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 font-mono"><code>$1</code></pre>')
-    .replace(/```([\s\S]*?)```/g, '<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 font-mono"><code>$1</code></pre>')
-    .replace(/^> \[\!TIP\]\s*\n> (.*$)/gim, '<div class="my-6 rounded-xl border border-slate-200 bg-slate-50 p-4 text-xs text-slate-800 font-medium"><strong>Note:</strong> $1</div>')
-    .replace(/^> (.*$)/gim, '<blockquote class="my-4 border-l-4 border-violet-600 pl-4 py-1 italic text-slate-700 bg-slate-50/50 rounded-r-xl">$1</blockquote>')
-    .replace(/\n\n/g, '</p><p class="my-4 leading-relaxed text-slate-700">');
-
-  return `<p class="my-4 leading-relaxed text-slate-700">${html}</p>`;
-}

@@ -1,23 +1,24 @@
 # Leadsx1B Blog
 > Official bilingual blog about B2B prospecting, Google Maps lead generation, WhatsApp sales, and CRM workflows.
+> Leadsx1B platform: https://www.leads1xb.pro
 
 The blog is published in English and Portuguese. Article pages are public and can be cited with their canonical URLs.
 
 ## Blog indexes
-- [English blog](https://www.leads1xb.pro/blog): Latest English articles.
-- [Blog em português](https://www.leads1xb.pro/pt/blog): Artigos recentes em português.
+- [English blog](https://blog.leads1xb.pro/blog): Latest English articles.
+- [Blog em português](https://blog.leads1xb.pro/pt/blog): Artigos recentes em português.
 
 ## English articles
-- [How to Prospect on WhatsApp Without Getting Banned: The Ultimate Cold Outreach Guide](https://www.leads1xb.pro/blog/cold-outreach-whatsapp-sales-guide): Learn essential phone warming rules, smart sending cadence, and battle-tested copywriting formulas to run high-volume WhatsApp outreach safely.
-- [How to Extract 1,000+ Verified B2B Leads from Google Maps in Under 10 Minutes with AI](https://www.leads1xb.pro/blog/google-maps-b2b-lead-generation-ai): Discover the exact blueprint top outbound sales teams use to extract hyper-targeted local business leads from Google Maps, enrich them with AI, and convert them via WhatsApp.
-- [How to Build a High-Velocity B2B Sales Pipeline to Close 3x More Deals](https://www.leads1xb.pro/blog/b2b-sales-pipeline-crm-best-practices): Learn how to structure every stage of your sales funnel, eliminate follow-up friction, and keep your reps laser-focused on top-tier revenue deals.
-- [Step-by-Step Tutorial: From Zero to Your First Closed Deal with Leadsx1B in 15 Minutes](https://www.leads1xb.pro/blog/leadsx1b-complete-step-by-step-tutorial): The complete onboarding guide to configure your workspace, pull high-intent leads from Google Maps, connect WhatsApp, and launch your first outbound campaign.
+- [How to Prospect on WhatsApp Without Getting Banned: The Ultimate Cold Outreach Guide](https://blog.leads1xb.pro/blog/cold-outreach-whatsapp-sales-guide): Learn essential phone warming rules, smart sending cadence, and battle-tested copywriting formulas to run high-volume WhatsApp outreach safely.
+- [How to Extract 1,000+ Verified B2B Leads from Google Maps in Under 10 Minutes with AI](https://blog.leads1xb.pro/blog/google-maps-b2b-lead-generation-ai): Discover the exact blueprint top outbound sales teams use to extract hyper-targeted local business leads from Google Maps, enrich them with AI, and convert them via WhatsApp.
+- [How to Build a High-Velocity B2B Sales Pipeline to Close 3x More Deals](https://blog.leads1xb.pro/blog/b2b-sales-pipeline-crm-best-practices): Learn how to structure every stage of your sales funnel, eliminate follow-up friction, and keep your reps laser-focused on top-tier revenue deals.
+- [Step-by-Step Tutorial: From Zero to Your First Closed Deal with Leadsx1B in 15 Minutes](https://blog.leads1xb.pro/blog/leadsx1b-complete-step-by-step-tutorial): The complete onboarding guide to configure your workspace, pull high-intent leads from Google Maps, connect WhatsApp, and launch your first outbound campaign.
 
 ## Artigos em português
-- [Como Estruturar um Pipeline de Vendas no CRM para Fechar 3x Mais Negócios no B2B](https://www.leads1xb.pro/pt/blog/como-estruturar-pipeline-crm-vendas): Aprenda a organizar cada etapa do seu funil comercial, eliminar gargalos de follow-up e manter seu time focado nas oportunidades mais quentes.
-- [Tutorial Completo: Do Primeiro Lead ao Fechamento no Leadsx1B em 15 Minutos](https://www.leads1xb.pro/pt/blog/tutorial-passo-a-passo-leadsx1b): Guia passo a passo definitivo para configurar sua conta, extrair empresas do Google Maps, conectar seu WhatsApp e disparar sua primeira campanha hoje.
-- [Como Prospeccionar Clientes no WhatsApp sem Ser Bloqueado: O Guia Definitivo de Cold Outreach](https://www.leads1xb.pro/pt/blog/como-prospeccionar-whatsapp-sem-bloqueio-guia): Aprenda as regras fundamentais de aquecimento de chip, cadência de disparos e copywriting persuasivo para fazer prospecção ativa via WhatsApp com segurança total.
-- [Como Extrair Mais de 1.000 Leads B2B Verificados do Google Maps em Menos de 10 Minutos com IA](https://www.leads1xb.pro/pt/blog/extracao-leads-google-maps-ia): Descubra o passo a passo exato que as melhores equipes de vendas outbound usam para extrair leads qualificados do Google Maps, enriquecer com IA e converter via WhatsApp.
+- [Como Estruturar um Pipeline de Vendas no CRM para Fechar 3x Mais Negócios no B2B](https://blog.leads1xb.pro/pt/blog/como-estruturar-pipeline-crm-vendas): Aprenda a organizar cada etapa do seu funil comercial, eliminar gargalos de follow-up e manter seu time focado nas oportunidades mais quentes.
+- [Tutorial Completo: Do Primeiro Lead ao Fechamento no Leadsx1B em 15 Minutos](https://blog.leads1xb.pro/pt/blog/tutorial-passo-a-passo-leadsx1b): Guia passo a passo definitivo para configurar sua conta, extrair empresas do Google Maps, conectar seu WhatsApp e disparar sua primeira campanha hoje.
+- [Como Prospeccionar Clientes no WhatsApp sem Ser Bloqueado: O Guia Definitivo de Cold Outreach](https://blog.leads1xb.pro/pt/blog/como-prospeccionar-whatsapp-sem-bloqueio-guia): Aprenda as regras fundamentais de aquecimento de chip, cadência de disparos e copywriting persuasivo para fazer prospecção ativa via WhatsApp com segurança total.
+- [Como Extrair Mais de 1.000 Leads B2B Verificados do Google Maps em Menos de 10 Minutos com IA](https://blog.leads1xb.pro/pt/blog/extracao-leads-google-maps-ia): Descubra o passo a passo exato que as melhores equipes de vendas outbound usam para extrair leads qualificados do Google Maps, enriquecer com IA e converter via WhatsApp.
 
 ## Full article text
-- [Full text of all listed articles](https://www.leads1xb.pro/llms-full.txt): Markdown source with article titles, summaries, and body text.
+- [Full text of all listed articles](https://blog.leads1xb.pro/llms-full.txt): Markdown source with article titles, summaries, and body text.

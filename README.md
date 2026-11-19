@@ -21,7 +21,7 @@ Article slugs are defined in each Markdown file's frontmatter. `alternateSlug` c
 - `src/app/robots.ts` allows public search and AI crawlers and publishes the sitemap URL.
 - `src/app/sitemap.ts` builds a sitemap from the current article files, including language alternates.
 - `public/llms.txt` and `public/llms-full.txt` are regenerated from the Markdown articles before each production build.
-- On Vercel, set `NEXT_PUBLIC_BLOG_URL` to the blog's canonical origin (for example, `https://blog.leads1xb.pro`). If unset, it defaults to `https://www.leads1xb.pro`.
+- On Vercel, set `NEXT_PUBLIC_BLOG_URL` to the blog's canonical origin (default: `https://blog.leads1xb.pro`) and `NEXT_PUBLIC_APP_URL` to the platform origin (default: `https://www.leads1xb.pro`). Canonicals, hreflang links, social metadata, the sitemap, and discovery files use these configurable origins.
 
 To publish an article, add its Markdown file under `content/blog/en/` or `content/blog/pt/`, commit it, and push to the production branch. The connected Vercel project rebuilds the article pages and discovery files from those sources.
 
@@ -106,11 +106,4 @@ src/lib/seo.ts      Canonical domain, metadata helpers, and structured data
 
 ## SEO and domain
 
-`src/lib/seo.ts` is the source of truth for the canonical site domain used by the application, metadata, structured data, and platform links. Static SEO files under `public/` also contain absolute URLs; update them if the production domain changes:
-
-- `public/robots.txt`
-- `public/sitemap.xml`
-- `public/llms.txt`
-- `public/llms-full.txt`
-
-The current official domain is `https://www.leads1xb.pro`. Keep the hostname consistent across canonical URLs, sitemap entries, social metadata, and platform calls to action.
+Set `NEXT_PUBLIC_BLOG_URL` and `NEXT_PUBLIC_APP_URL` in the deployment environment to change the blog and platform origins. Canonical metadata, structured data, sitemap entries, social previews, and generated `llms.txt` files read these values. Their production fallbacks are `https://blog.leads1xb.pro` and `https://www.leads1xb.pro`, respectively.

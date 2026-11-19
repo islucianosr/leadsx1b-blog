@@ -7,6 +7,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { PostCard } from "../../components/PostCard";
 import { SearchAndFilter } from "../../components/SearchAndFilter";
+import { BlogJsonLd } from "../../components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "Leadsx1B Insights — B2B Lead Generation & WhatsApp Sales",
@@ -25,9 +26,16 @@ export const metadata: Metadata = {
     description:
       "Actionable outbound sales playbooks, Google Maps lead extraction, and automated visual CRM pipelines.",
     url: `${SITE_CONFIG.blogDomain}/blog`,
-    siteName: "Leadsx1B Insights",
+    siteName: "Leadsx1B",
     locale: "en_US",
-    type: "website"
+    type: "website",
+    images: [{ url: SITE_CONFIG.defaultOgImage, width: 1200, height: 630, alt: "Leadsx1B Insights" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Leadsx1B Insights — B2B Lead Generation & WhatsApp Sales",
+    description: "Real-world data, outbound playbooks, and pipeline architectures for modern sales teams.",
+    images: [SITE_CONFIG.defaultOgImage]
   }
 };
 
@@ -42,6 +50,7 @@ export default function BlogEnPage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 antialiased flex flex-col justify-between">
+      <BlogJsonLd locale="en" />
       <Header currentLocale="en" alternateUrl="/pt/blog" />
 
       <main className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 lg:px-8 space-y-16 flex-1">

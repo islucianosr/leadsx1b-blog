@@ -19,7 +19,9 @@ const sections: LegalSection[] = [
 export const metadata: Metadata = {
   title: "Privacy Policy | Leadsx1B Blog",
   description: "Privacy information for the Leadsx1B bilingual editorial blog.",
-  alternates: { canonical: `${SITE_CONFIG.blogDomain}/privacy`, languages: { en: `${SITE_CONFIG.blogDomain}/privacy`, pt: `${SITE_CONFIG.blogDomain}/pt/privacidade` } },
+  alternates: { canonical: `${SITE_CONFIG.blogDomain}/privacy`, languages: { en: `${SITE_CONFIG.blogDomain}/privacy`, pt: `${SITE_CONFIG.blogDomain}/pt/privacidade`, "x-default": `${SITE_CONFIG.blogDomain}/privacy` } },
+  openGraph: { title: "Privacy Policy | Leadsx1B Blog", description: "Privacy information for the Leadsx1B bilingual editorial blog.", url: `${SITE_CONFIG.blogDomain}/privacy`, siteName: "Leadsx1B", type: "website", images: [{ url: SITE_CONFIG.defaultOgImage, width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image", title: "Privacy Policy | Leadsx1B Blog", description: "Privacy information for the Leadsx1B bilingual editorial blog.", images: [SITE_CONFIG.defaultOgImage] },
 };
 
 export default function PrivacyPage() {

@@ -18,22 +18,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${base}/privacy`,
       changeFrequency: "yearly",
-      alternates: { languages: { en: `${base}/privacy`, pt: `${base}/pt/privacidade` } },
+      alternates: { languages: { en: `${base}/privacy`, pt: `${base}/pt/privacidade`, "x-default": `${base}/privacy` } },
     },
     {
       url: `${base}/terms`,
       changeFrequency: "yearly",
-      alternates: { languages: { en: `${base}/terms`, pt: `${base}/pt/termos` } },
+      alternates: { languages: { en: `${base}/terms`, pt: `${base}/pt/termos`, "x-default": `${base}/terms` } },
     },
     {
       url: `${base}/pt/privacidade`,
       changeFrequency: "yearly",
-      alternates: { languages: { en: `${base}/privacy`, pt: `${base}/pt/privacidade` } },
+      alternates: { languages: { en: `${base}/privacy`, pt: `${base}/pt/privacidade`, "x-default": `${base}/privacy` } },
     },
     {
       url: `${base}/pt/termos`,
       changeFrequency: "yearly",
-      alternates: { languages: { en: `${base}/terms`, pt: `${base}/pt/termos` } },
+      alternates: { languages: { en: `${base}/terms`, pt: `${base}/pt/termos`, "x-default": `${base}/terms` } },
     },
   ];
 

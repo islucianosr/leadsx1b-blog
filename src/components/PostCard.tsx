@@ -28,7 +28,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
 
       <div className="space-y-1.5">
         <div className="flex items-center gap-2 text-[11px] font-medium text-slate-400">
-          <time dateTime={post.date}>{post.date}</time>
+          <time dateTime={post.dateISO}>{post.date}</time>
           <span aria-hidden="true">·</span>
           <span>{post.readTime}</span>
         </div>

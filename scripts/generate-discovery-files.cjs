@@ -5,7 +5,8 @@ const matter = require("gray-matter");
 const root = path.join(__dirname, "..");
 const contentRoot = path.join(root, "content", "blog");
 const publicRoot = path.join(root, "public");
-const siteUrl = (process.env.NEXT_PUBLIC_BLOG_URL || "https://www.leads1xb.pro").replace(/\/$/, "");
+const siteUrl = (process.env.NEXT_PUBLIC_BLOG_URL || "https://blog.leads1xb.pro").replace(/\/+$/, "");
+const appUrl = (process.env.NEXT_PUBLIC_APP_URL || "https://www.leads1xb.pro").replace(/\/+$/, "");
 
 const windows1252 = new Map([
   ["€", 0x80], ["‚", 0x82], ["ƒ", 0x83], ["„", 0x84], ["…", 0x85],
@@ -65,6 +66,7 @@ const links = (posts) => posts.map((post) =>
 const llms = [
   "# Leadsx1B Blog",
   "> Official bilingual blog about B2B prospecting, Google Maps lead generation, WhatsApp sales, and CRM workflows.",
+  `> Leadsx1B platform: ${appUrl}`,
   "",
   "The blog is published in English and Portuguese. Article pages are public and can be cited with their canonical URLs.",
   "",

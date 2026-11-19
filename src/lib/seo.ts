@@ -1,12 +1,21 @@
 import type { BlogPost, Locale } from "./blog";
 
+const withoutTrailingSlash = (url: string) => url.replace(/\/+$/, "");
+
+export const APP_URL = withoutTrailingSlash(
+  process.env.NEXT_PUBLIC_APP_URL || "https://www.leads1xb.pro"
+);
+export const BLOG_URL = withoutTrailingSlash(
+  process.env.NEXT_PUBLIC_BLOG_URL || "https://blog.leads1xb.pro"
+);
+
 export const SITE_CONFIG = {
   name: "Leadsx1B",
   legalName: "Leadsx1B Inc.",
-  domain: "https://www.leads1xb.pro",
-  blogDomain: (process.env.NEXT_PUBLIC_BLOG_URL || "https://www.leads1xb.pro").replace(/\/+$/, ""),
+  domain: APP_URL,
+  blogDomain: BLOG_URL,
   twitterHandle: "@leadsx1b",
-  defaultOgImage: "https://www.leads1xb.pro/images/blog-google-maps-lead-gen.png",
+  defaultOgImage: `${BLOG_URL}/images/blog-google-maps-lead-gen.png`,
   defaultDescriptions: {
     en: "The #1 AI platform to extract verified B2B leads from Google Maps in under 3 minutes, organize in a visual CRM, and reach out on WhatsApp.",
     pt: "A plataforma #1 com IA para extrair leads verificados do Google Maps em menos de 3 minutos, organizar em CRM visual e disparar no WhatsApp."
@@ -54,6 +63,12 @@ export function generateHreflangTags(post: BlogPost): HrefLangLink[] {
     { rel: "alternate", hrefLang: "pt", href: ptUrl },
     { rel: "alternate", hrefLang: "x-default", href: enUrl }
   ];
+}
+
+export function getArticleImageUrl(post: BlogPost): string {
+  return post.seo.ogImage.startsWith("http")
+    ? post.seo.ogImage
+    : `${BLOG_URL}${post.seo.ogImage.startsWith("/") ? "" : "/"}${post.seo.ogImage}`;
 }
 
 export function generateBlogListingHreflang(): HrefLangLink[] {
@@ -185,10 +200,74 @@ export function generateFaqSchema(locale: Locale) {
   };
 }
 
+export function generateBlogJsonLdGraph(locale: Locale, post?: BlogPost) {
+  const appUrl = APP_URL;
+  const blogUrl = BLOG_URL;
+  const localePrefix = locale === "pt" ? "/pt" : "";
+  const graph: Record<string, unknown>[] = [
+    {
+      "@type": "Organization",
+      "@id": `${appUrl}/#organization`,
+      name: "Leadsx1B",
+      alternateName: ["Leadsx1B Platform", "Leads 1xB"],
+      url: appUrl,
+      sameAs: [blogUrl],
+    },
+    {
+      "@type": "Blog",
+      "@id": `${blogUrl}/#blog`,
+      name: "Leadsx1B Insights & Blog",
+      url: blogUrl,
+      publisher: { "@id": `${appUrl}/#organization` },
+      inLanguage: ["en-US", "pt-BR"],
+    },
+  ];
+
+  if (!post) return { "@context": "https://schema.org", "@graph": graph };
+
+  const isPt = post.locale === "pt";
+  const url = `${blogUrl}${isPt ? "/pt" : ""}/blog/${post.slug}`;
+  const listingUrl = `${blogUrl}${localePrefix}/blog`;
+  const dateTime = `${post.dateISO}T08:00:00.000Z`;
+
+  graph.push(
+    {
+      "@type": "BlogPosting",
+      "@id": `${url}#blogposting`,
+      headline: post.title,
+      description: post.seo.metaDescription,
+      image: [getArticleImageUrl(post)],
+      datePublished: dateTime,
+      dateModified: dateTime,
+      inLanguage: isPt ? "pt-BR" : "en-US",
+      author: {
+        "@type": "Person",
+        name: post.author.name,
+        jobTitle: post.author.role,
+      },
+      publisher: { "@id": `${appUrl}/#organization` },
+      isPartOf: { "@id": `${blogUrl}/#blog` },
+      mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      keywords: post.seo.keywords.join(", "),
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${url}#breadcrumb`,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Blog", item: listingUrl },
+        { "@type": "ListItem", position: 2, name: post.category, item: listingUrl },
+        { "@type": "ListItem", position: 3, name: post.title, item: url },
+      ],
+    }
+  );
+
+  return { "@context": "https://schema.org", "@graph": graph };
+}
+
+/* Legacy helpers retained for FAQ schema consumers. */
 export function generateJsonLd(post: BlogPost) {
   const isPt = post.locale === "pt";
-  const url = `${SITE_CONFIG.blogDomain}${isPt ? "/pt" : ""}/blog/${post.slug}`;
-
+  const url = `${BLOG_URL}${isPt ? "/pt" : ""}/blog/${post.slug}`;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -198,13 +277,9 @@ export function generateJsonLd(post: BlogPost) {
     },
     "headline": post.title,
     "description": post.seo.metaDescription,
-    "image": [
-      post.seo.ogImage.startsWith("http")
-        ? post.seo.ogImage
-        : `${SITE_CONFIG.blogDomain}${post.seo.ogImage}`
-    ],
-    "datePublished": `${post.date}T08:00:00+00:00`,
-    "dateModified": `${post.date}T08:00:00+00:00`,
+    "image": [getArticleImageUrl(post)],
+    "datePublished": `${post.dateISO}T08:00:00.000Z`,
+    "dateModified": `${post.dateISO}T08:00:00.000Z`,
     "inLanguage": isPt ? "pt-BR" : "en-US",
     "author": {
       "@type": "Person",

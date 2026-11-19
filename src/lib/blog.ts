@@ -32,6 +32,7 @@ export interface BlogPost {
   coverImage: string;
   author: Author;
   date: string;
+  dateISO: string;
   readTime: string;
   featured?: boolean;
   content: string;
@@ -40,6 +41,50 @@ export interface BlogPost {
 }
 
 const CONTENT_PATH = path.join(process.cwd(), "content", "blog");
+
+const MONTHS: Record<string, number> = {
+  january: 1, janeiro: 1,
+  february: 2, fevereiro: 2,
+  march: 3, marco: 3,
+  april: 4, abril: 4,
+  may: 5, maio: 5,
+  june: 6, junho: 6,
+  july: 7, julho: 7,
+  august: 8, agosto: 8,
+  september: 9, setembro: 9,
+  october: 10, outubro: 10,
+  november: 11, novembro: 11,
+  december: 12, dezembro: 12,
+};
+
+export function toISODate(value: string): string {
+  const text = String(value).trim();
+  let year: number;
+  let month: number;
+  let day: number;
+  const iso = text.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  const localized = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const ptDate = localized.match(/^(\d{1,2})\s+de\s+([a-z]+)\s+de\s+(\d{4})$/);
+  const enDate = localized.match(/^([a-z]+)\s+(\d{1,2}),?\s+(\d{4})$/);
+
+  if (iso) {
+    year = Number(iso[1]); month = Number(iso[2]); day = Number(iso[3]);
+  } else if (ptDate) {
+    day = Number(ptDate[1]); month = MONTHS[ptDate[2]]; year = Number(ptDate[3]);
+  } else if (enDate) {
+    month = MONTHS[enDate[1]]; day = Number(enDate[2]); year = Number(enDate[3]);
+  } else {
+    const parsed = new Date(text);
+    if (Number.isNaN(parsed.getTime())) throw new Error(`Invalid blog publication date: ${value}`);
+    return parsed.toISOString().slice(0, 10);
+  }
+
+  const parsed = new Date(Date.UTC(year, month - 1, day));
+  if (!month || parsed.getUTCFullYear() !== year || parsed.getUTCMonth() !== month - 1 || parsed.getUTCDate() !== day) {
+    throw new Error(`Invalid blog publication date: ${value}`);
+  }
+  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
 
 export function slugify(text: string): string {
   return text
@@ -94,6 +139,7 @@ export function getAllPosts(locale: Locale): BlogPost[] {
         avatar: "/images/author-default.jpg"
       },
       date: data.date,
+      dateISO: toISODate(data.date),
       readTime: data.readTime || calculateReadTime(content, locale),
       featured: Boolean(data.featured),
       content,
@@ -108,7 +154,7 @@ export function getAllPosts(locale: Locale): BlogPost[] {
   });
 
   return posts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    (a, b) => b.dateISO.localeCompare(a.dateISO)
   );
 }
 
