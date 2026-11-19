@@ -14,18 +14,18 @@ export const metadata: Metadata = {
   description:
     "Análises táticas e dados práticos para equipes comerciais acelerarem receita, extraírem leads do Google Maps e escalarem vendas no WhatsApp.",
   alternates: {
-    canonical: `${SITE_CONFIG.domain}/pt/blog`,
+    canonical: `${SITE_CONFIG.blogDomain}/pt/blog`,
     languages: {
-      en: `${SITE_CONFIG.domain}/blog`,
-      pt: `${SITE_CONFIG.domain}/pt/blog`,
-      "x-default": `${SITE_CONFIG.domain}/blog`
+      en: `${SITE_CONFIG.blogDomain}/blog`,
+      pt: `${SITE_CONFIG.blogDomain}/pt/blog`,
+      "x-default": `${SITE_CONFIG.blogDomain}/blog`
     }
   },
   openGraph: {
     title: "Blog Leadsx1B — Estratégias Outbound, Leads e WhatsApp Sales",
     description:
       "Aprenda a estruturar operações outbound de alta conversão com IA, Google Maps e CRM integrado.",
-    url: `${SITE_CONFIG.domain}/pt/blog`,
+    url: `${SITE_CONFIG.blogDomain}/pt/blog`,
     siteName: "Leadsx1B Insights",
     locale: "pt_BR",
     type: "website"

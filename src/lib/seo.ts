@@ -4,6 +4,7 @@ export const SITE_CONFIG = {
   name: "Leadsx1B",
   legalName: "Leadsx1B Inc.",
   domain: "https://www.leads1xb.pro",
+  blogDomain: process.env.NEXT_PUBLIC_BLOG_URL || "https://www.leads1xb.pro",
   twitterHandle: "@leadsx1b",
   defaultOgImage: "https://www.leads1xb.pro/images/leadsx1b-og-cover.png",
   logoUrl: "https://www.leads1xb.pro/images/logo.png",
@@ -46,8 +47,8 @@ export function generateHreflangTags(post: BlogPost): HrefLangLink[] {
   const enSlug = isPt ? post.alternateSlug || post.slug : post.slug;
   const ptSlug = isPt ? post.slug : post.alternateSlug || post.slug;
 
-  const enUrl = `${SITE_CONFIG.domain}/blog/${enSlug}`;
-  const ptUrl = `${SITE_CONFIG.domain}/pt/blog/${ptSlug}`;
+  const enUrl = `${SITE_CONFIG.blogDomain}/blog/${enSlug}`;
+  const ptUrl = `${SITE_CONFIG.blogDomain}/pt/blog/${ptSlug}`;
 
   return [
     { rel: "alternate", hrefLang: "en", href: enUrl },
@@ -58,9 +59,9 @@ export function generateHreflangTags(post: BlogPost): HrefLangLink[] {
 
 export function generateBlogListingHreflang(): HrefLangLink[] {
   return [
-    { rel: "alternate", hrefLang: "en", href: `${SITE_CONFIG.domain}/blog` },
-    { rel: "alternate", hrefLang: "pt", href: `${SITE_CONFIG.domain}/pt/blog` },
-    { rel: "alternate", hrefLang: "x-default", href: `${SITE_CONFIG.domain}/blog` }
+    { rel: "alternate", hrefLang: "en", href: `${SITE_CONFIG.blogDomain}/blog` },
+    { rel: "alternate", hrefLang: "pt", href: `${SITE_CONFIG.blogDomain}/pt/blog` },
+    { rel: "alternate", hrefLang: "x-default", href: `${SITE_CONFIG.blogDomain}/blog` }
   ];
 }
 
@@ -187,7 +188,7 @@ export function generateFaqSchema(locale: Locale) {
 
 export function generateJsonLd(post: BlogPost) {
   const isPt = post.locale === "pt";
-  const url = `${SITE_CONFIG.domain}${isPt ? "/pt" : ""}/blog/${post.slug}`;
+  const url = `${SITE_CONFIG.blogDomain}${isPt ? "/pt" : ""}/blog/${post.slug}`;
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -201,7 +202,7 @@ export function generateJsonLd(post: BlogPost) {
     "image": [
       post.seo.ogImage.startsWith("http")
         ? post.seo.ogImage
-        : `${SITE_CONFIG.domain}${post.seo.ogImage}`
+        : `${SITE_CONFIG.blogDomain}${post.seo.ogImage}`
     ],
     "datePublished": `${post.date}T08:00:00+00:00`,
     "dateModified": `${post.date}T08:00:00+00:00`,
@@ -237,7 +238,7 @@ export function generateJsonLd(post: BlogPost) {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": `${SITE_CONFIG.domain}${isPt ? "/pt" : ""}/blog`
+        "item": `${SITE_CONFIG.blogDomain}${isPt ? "/pt" : ""}/blog`
       },
       {
         "@type": "ListItem",

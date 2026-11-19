@@ -38,13 +38,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: post.seo.metaDescription,
     keywords: post.seo.keywords,
     alternates: {
-      canonical: `${SITE_CONFIG.domain}/pt/blog/${post.slug}`,
+      canonical: `${SITE_CONFIG.blogDomain}/pt/blog/${post.slug}`,
       languages: alternatesLanguages
     },
     openGraph: {
       title: `${post.title} | Leadsx1B Insights`,
       description: post.seo.metaDescription,
-      url: `${SITE_CONFIG.domain}/pt/blog/${post.slug}`,
+      url: `${SITE_CONFIG.blogDomain}/pt/blog/${post.slug}`,
       siteName: SITE_CONFIG.name,
       locale: "pt_BR",
       type: "article",

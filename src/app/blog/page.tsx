@@ -13,18 +13,18 @@ export const metadata: Metadata = {
   description:
     "Real-world data, outbound playbooks, and pipeline architectures to help modern sales teams extract Google Maps leads and close deals on WhatsApp.",
   alternates: {
-    canonical: `${SITE_CONFIG.domain}/blog`,
+    canonical: `${SITE_CONFIG.blogDomain}/blog`,
     languages: {
-      en: `${SITE_CONFIG.domain}/blog`,
-      pt: `${SITE_CONFIG.domain}/pt/blog`,
-      "x-default": `${SITE_CONFIG.domain}/blog`
+      en: `${SITE_CONFIG.blogDomain}/blog`,
+      pt: `${SITE_CONFIG.blogDomain}/pt/blog`,
+      "x-default": `${SITE_CONFIG.blogDomain}/blog`
     }
   },
   openGraph: {
     title: "Leadsx1B Insights — B2B Lead Generation & Outbound Sales",
     description:
       "Actionable outbound sales playbooks, Google Maps lead extraction, and automated visual CRM pipelines.",
-    url: `${SITE_CONFIG.domain}/blog`,
+    url: `${SITE_CONFIG.blogDomain}/blog`,
     siteName: "Leadsx1B Insights",
     locale: "en_US",
     type: "website"

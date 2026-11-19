@@ -16,6 +16,15 @@ A bilingual English and Portuguese blog for Leadsx1B, an AI-powered B2B lead-gen
 
 Article slugs are defined in each Markdown file's frontmatter. `alternateSlug` connects the English and Portuguese versions for the language switcher and SEO alternate links. The blog's platform links point to the official platform URL above.
 
+## Search and AI discovery
+
+- `src/app/robots.ts` allows public search and AI crawlers and publishes the sitemap URL.
+- `src/app/sitemap.ts` builds a sitemap from the current article files, including language alternates.
+- `public/llms.txt` and `public/llms-full.txt` are regenerated from the Markdown articles before each production build.
+- On Vercel, set `NEXT_PUBLIC_BLOG_URL` to the blog's canonical origin (for example, `https://blog.leads1xb.pro`). If unset, it defaults to `https://www.leads1xb.pro`.
+
+To publish an article, add its Markdown file under `content/blog/en/` or `content/blog/pt/`, commit it, and push to the production branch. The connected Vercel project rebuilds the article pages and discovery files from those sources.
+
 ## Requirements
 
 - Node.js 18.17 or newer
