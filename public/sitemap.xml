@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- HOME PAGES -->
+  <url>
+    <loc>https://www.leads1xb.pro/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/" />
+  </url>
+  <url>
+    <loc>https://www.leads1xb.pro/pt</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/" />
+  </url>
+
+  <!-- BLOG LISTINGS -->
+  <url>
+    <loc>https://www.leads1xb.pro/blog</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/blog" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/blog" />
+  </url>
+  <url>
+    <loc>https://www.leads1xb.pro/pt/blog</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/blog" />
+  </url>
+
+  <!-- POST 1: GOOGLE MAPS LEAD GENERATION WITH AI -->
+  <url>
+    <loc>https://www.leads1xb.pro/blog/google-maps-b2b-lead-generation-ai</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/blog/google-maps-b2b-lead-generation-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt/blog/extracao-leads-google-maps-ia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/blog/google-maps-b2b-lead-generation-ai" />
+  </url>
+  <url>
+    <loc>https://www.leads1xb.pro/pt/blog/extracao-leads-google-maps-ia</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt/blog/extracao-leads-google-maps-ia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/blog/google-maps-b2b-lead-generation-ai" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/blog/google-maps-b2b-lead-generation-ai" />
+  </url>
+
+  <!-- POST 2: WHATSAPP COLD OUTREACH ANTI-BAN GUIDE -->
+  <url>
+    <loc>https://www.leads1xb.pro/blog/cold-outreach-whatsapp-sales-guide</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/blog/cold-outreach-whatsapp-sales-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt/blog/como-prospeccionar-whatsapp-sem-bloqueio-guia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/blog/cold-outreach-whatsapp-sales-guide" />
+  </url>
+  <url>
+    <loc>https://www.leads1xb.pro/pt/blog/como-prospeccionar-whatsapp-sem-bloqueio-guia</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt/blog/como-prospeccionar-whatsapp-sem-bloqueio-guia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/blog/cold-outreach-whatsapp-sales-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/blog/cold-outreach-whatsapp-sales-guide" />
+  </url>
+
+  <!-- POST 3: B2B CRM SALES PIPELINE BEST PRACTICES -->
+  <url>
+    <loc>https://www.leads1xb.pro/blog/b2b-sales-pipeline-crm-best-practices</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/blog/b2b-sales-pipeline-crm-best-practices" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt/blog/como-estruturar-pipeline-crm-vendas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/blog/b2b-sales-pipeline-crm-best-practices" />
+  </url>
+  <url>
+    <loc>https://www.leads1xb.pro/pt/blog/como-estruturar-pipeline-crm-vendas</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt/blog/como-estruturar-pipeline-crm-vendas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/blog/b2b-sales-pipeline-crm-best-practices" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/blog/b2b-sales-pipeline-crm-best-practices" />
+  </url>
+
+  <!-- POST 4: LEADSX1B COMPLETE STEP-BY-STEP TUTORIAL -->
+  <url>
+    <loc>https://www.leads1xb.pro/blog/leadsx1b-complete-step-by-step-tutorial</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/blog/leadsx1b-complete-step-by-step-tutorial" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt/blog/tutorial-passo-a-passo-leadsx1b" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/blog/leadsx1b-complete-step-by-step-tutorial" />
+  </url>
+  <url>
+    <loc>https://www.leads1xb.pro/pt/blog/tutorial-passo-a-passo-leadsx1b</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.leads1xb.pro/pt/blog/tutorial-passo-a-passo-leadsx1b" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leads1xb.pro/blog/leadsx1b-complete-step-by-step-tutorial" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leads1xb.pro/blog/leadsx1b-complete-step-by-step-tutorial" />
+  </url>
+
+</urlset>
