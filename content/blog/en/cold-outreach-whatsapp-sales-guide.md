@@ -24,7 +24,7 @@ WhatsApp has emerged as the most lucrative direct communication channel in globa
 
 Yet, most businesses fail at WhatsApp outbound because they treat it like spam email: buying a low-quality spreadsheet, buying a fresh SIM card, and blasting 500 identical sales pitches. The inevitable result is permanent account suspension in under 24 hours.
 
-In this complete blueprint, you will master the proven mechanics of high-conversion WhatsApp outbound prospecting—with safety protocols, 90%+ open rates, and 35%+ reply rates.
+In this complete blueprint, you will learn the mechanics of high-conversion WhatsApp outbound prospecting, including safety protocols and practical targets for open and reply rates.
 
 ---
 
@@ -47,11 +47,11 @@ Never launch outbound prospecting campaigns on a virgin phone number without com
 
 | Timeline | Daily Routine | Daily Contact Limit |
 | :--- | :--- | :--- |
-| **Days 1–3** | Join 3 active groups. Send voice notes and messages with trusted contacts. | 0 cold messages |
-| **Days 4–7** | Make outbound voice calls, configure business profile image and description. | Up to 10 spaced messages |
-| **Days 8–10** | Initiate personalized outreach with 45–90 second randomized delays between sends. | Up to 25 messages/day |
-| **Days 11–14** | Expand outreach volume using personalized variables for name, city, and business title. | Up to 50–80 messages/day |
-| **Day 15+** | Full production scale using Leadsx1B intelligent dispatch engine. | 150–250 dialogues/day/number |
+| **Days 1-3** | Join 3 active groups. Send voice notes and messages with trusted contacts. | 0 cold messages |
+| **Days 4-7** | Make outbound voice calls, configure business profile image and description. | Up to 10 spaced messages |
+| **Days 8-10** | Initiate personalized outreach with 45-90 second randomized delays between sends. | Up to 25 messages/day |
+| **Days 11-14** | Expand outreach volume using personalized variables for name, city, and business title. | Up to 50-80 messages/day |
+| **Day 15+** | Full production scale using Leadsx1B intelligent dispatch engine. | 150-250 dialogues/day/number |
 
 ---
 

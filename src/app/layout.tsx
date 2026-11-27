@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.blogDomain),
   title: "Leadsx1B Insights",
   description: "Bilingual blog with insights on B2B lead generation and sales.",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+  },
   verification: {
     google: "-4b7hdCI_mrtJIsNZTrLmZ2v11Yq1PoPoRKQPfl6kwg",
   },

@@ -111,7 +111,7 @@ WhatsApp messages enjoy a **98% open rate**, but if your message reads like gene
 
 The secret to WhatsApp outbound is **micro-personalization referencing their Google Maps presence**:
 
-> *"Hi [First Name], noticed your clinic [Clinic Name] has fantastic 4.9-star reviews on Google Maps in [City]. I saw you're currently booking through phone only—are you open to seeing how other clinics in [City] are capturing 40+ extra patients monthly directly through automated WhatsApp booking?"*
+> *"Hi [First Name], I noticed [Clinic Name] has 4.9-star reviews on Google Maps in [City]. I saw you currently handle bookings by phone. Would you be open to learning how clinics in [City] capture 40+ extra patients each month with automated WhatsApp booking?"*
 
 Why this message works:
 - **Specific recognition:** Mentions their exact Google review score.

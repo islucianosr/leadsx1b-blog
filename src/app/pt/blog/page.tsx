@@ -11,7 +11,7 @@ import { SearchAndFilter } from "../../../components/SearchAndFilter";
 import { BlogJsonLd } from "../../../components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Blog Leadsx1B — Prospecção B2B, Vendas no WhatsApp e CRM",
+  title: "Blog Leadsx1B | Prospecção B2B, Vendas no WhatsApp e CRM",
   description:
     "Análises táticas e dados práticos para equipes comerciais acelerarem receita, extraírem leads do Google Maps e escalarem vendas no WhatsApp.",
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     }
   },
   openGraph: {
-    title: "Blog Leadsx1B — Estratégias Outbound, Leads e WhatsApp Sales",
+    title: "Blog Leadsx1B | Estratégias Outbound, Leads e WhatsApp Sales",
     description:
       "Aprenda a estruturar operações outbound de alta conversão com IA, Google Maps e CRM integrado.",
     url: `${SITE_CONFIG.blogDomain}/pt/blog`,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog Leadsx1B — Estratégias de prospecção e vendas B2B",
+    title: "Blog Leadsx1B | Estratégias de prospecção e vendas B2B",
     description: "Análises e guias práticos para equipes comerciais que usam Google Maps, IA, WhatsApp e CRM.",
     images: [SITE_CONFIG.defaultOgImage]
   }

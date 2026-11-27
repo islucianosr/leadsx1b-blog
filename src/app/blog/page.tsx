@@ -10,7 +10,7 @@ import { SearchAndFilter } from "../../components/SearchAndFilter";
 import { BlogJsonLd } from "../../components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Leadsx1B Insights — B2B Lead Generation & WhatsApp Sales",
+  title: "Leadsx1B Insights | B2B Lead Generation & WhatsApp Sales",
   description:
     "Real-world data, outbound playbooks, and pipeline architectures to help modern sales teams extract Google Maps leads and close deals on WhatsApp.",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     }
   },
   openGraph: {
-    title: "Leadsx1B Insights — B2B Lead Generation & Outbound Sales",
+    title: "Leadsx1B Insights | B2B Lead Generation & Outbound Sales",
     description:
       "Actionable outbound sales playbooks, Google Maps lead extraction, and automated visual CRM pipelines.",
     url: `${SITE_CONFIG.blogDomain}/blog`,
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Leadsx1B Insights — B2B Lead Generation & WhatsApp Sales",
+    title: "Leadsx1B Insights | B2B Lead Generation & WhatsApp Sales",
     description: "Real-world data, outbound playbooks, and pipeline architectures for modern sales teams.",
     images: [SITE_CONFIG.defaultOgImage]
   }
