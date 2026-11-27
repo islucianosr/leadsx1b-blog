@@ -23,7 +23,7 @@ seo:
   ogImageAlt: "Fluxo de follow-up B2B: Google Maps, lead, enriquecimento com IA, CRM, WhatsApp, follow-up e venda"
 ---
 
-Você encontrou os leads. Enviou a primeira mensagem. E então... silêncio.
+Você encontrou os leads. Enviou a primeira mensagem. Depois, nada.
 
 A maioria das oportunidades B2B não é perdida porque o prospect disse "não". Elas morrem no silêncio que vem depois: uma mensagem sem segundo contato, um lead perdido numa planilha, uma conversa que ninguém lembra, ou uma resposta genérica igual a todas as outras.
 
@@ -75,11 +75,11 @@ O objetivo do framework não é a complexidade, mas a clareza: a qualquer moment
 
 Não existe um número universal. Uma cadência prática ajuda a evitar tanto o excesso de mensagens quanto o esquecimento do lead. Um ponto de partida razoável para a prospecção B2B é:
 
-- **Dia 0 — Primeira mensagem.** Uma abertura curta e personalizada que demonstra conhecimento sobre o negócio e apresenta uma razão clara para o contato.
-- **Dia 2 — Follow-up curto.** Um lembrete leve, preferencialmente fácil de responder.
-- **Dia 5 — Follow-up com valor.** Compartilhe uma observação útil, uma ideia pequena ou um exemplo relevante.
-- **Dia 9 — Novo ângulo.** Aborde o problema por outro lado. Se o primeiro contato falou em mais clientes, o próximo pode falar em economia de tempo ou menos trabalho manual.
-- **Dia 14 — Mensagem final.** Uma mensagem educada que encerra o ciclo e deixa a porta aberta.
+- **Dia 0: Primeira mensagem.** Uma abertura curta e personalizada que demonstra conhecimento sobre o negócio e apresenta uma razão clara para o contato.
+- **Dia 2: Follow-up curto.** Um lembrete leve, preferencialmente fácil de responder.
+- **Dia 5: Follow-up com valor.** Compartilhe uma observação útil, uma ideia pequena ou um exemplo relevante.
+- **Dia 9: Novo ângulo.** Aborde o problema por outro lado. Se o primeiro contato falou em mais clientes, o próximo pode falar em economia de tempo ou menos trabalho manual.
+- **Dia 14: Mensagem final.** Uma mensagem educada que encerra o ciclo e deixa a porta aberta.
 
 **Esta cadência é um ponto de partida, não uma fórmula para ultrapassar limites.** Respeite consentimento, políticas da plataforma e regras locais de proteção de dados e marketing. Se alguém pedir para parar ou sinalizar claramente que não tem interesse, pare imediatamente.
 
@@ -87,7 +87,7 @@ Não existe um número universal. Uma cadência prática ajuda a evitar tanto o 
 
 A parte mais difícil não é enviar mensagens, mas enviar mensagens relevantes. A IA pode preparar o trabalho, mas não deve falar automaticamente pelo vendedor.
 
-Seis usos práticos:
+Use a IA nestas situações:
 
 - **Analisar a empresa.** Use categoria, site, avaliações e serviços para gerar um resumo curto do negócio e do público atendido.
 - **Identificar contexto.** Pergunte quais fatores podem importar naquele momento: sazonalidade, concorrência ou gargalos comuns.
@@ -96,7 +96,7 @@ Seis usos práticos:
 - **Resumir conversas.** Após um thread longo no WhatsApp, condense perguntas, objeções e compromissos.
 - **Sugerir o próximo passo.** Com base na etapa e na última mensagem, gere uma recomendação e uma minuta para revisão humana.
 
-Três regras mantêm o processo confiável:
+Três regras evitam problemas:
 
 1. **Revisar antes de enviar.** A IA pode interpretar mal uma empresa ou inventar detalhes.
 2. **Usar apenas fatos reais.** Personalização baseada em suposições prejudica a confiança.
@@ -108,7 +108,7 @@ Um sistema de follow-up só funciona quando suas peças estão conectadas:
 
 **Google Maps → Lead → Enriquecimento com IA → CRM → WhatsApp → Follow-up → Venda**
 
-Na prática:
+O fluxo segue esta ordem:
 
 1. **Google Maps → Lead.** Pesquise por tipo de negócio e localização e reúna empresas alinhadas ao seu perfil de cliente.
 2. **Enriquecimento com IA.** Adicione contexto sobre o negócio e o possível argumento comercial.
@@ -163,7 +163,7 @@ Parar no momento certo protege sua reputação, a qualidade de envio e a confian
 
 A maioria das equipes comerciais não tem um problema de leads. Tem um problema de follow-up. O que separa as equipes que crescem daquelas que travam é o que acontece nos dias e semanas após a primeira mensagem.
 
-O processo é simples:
+Comece por estas cinco ações:
 
 1. Dê a cada lead uma etapa e uma próxima ação.
 2. Siga uma cadência definida e respeitosa.

@@ -23,7 +23,7 @@ seo:
   ogImageAlt: "B2B follow-up workflow: Google Maps, lead, AI enrichment, CRM, WhatsApp, follow-up, deal"
 ---
 
-You found the leads. You sent the first message. And then... nothing.
+You found the leads. You sent the first message. Then nothing.
 
 Most B2B deals are not lost because a prospect said "no." They are lost in the silence that follows: a message that never got a second touch, a lead buried in a spreadsheet, a conversation nobody remembers having, a generic reply that sounded like every other pitch in the inbox.
 
@@ -35,7 +35,7 @@ The answer is not "send more messages." It is a follow-up system: a clear set of
 
 ## Why Most B2B Leads Never Become Opportunities
 
-When a pipeline stalls, the instinct is to blame lead quality. Usually the problem is what happens after the first contact. These are the five most common failure points:
+When a pipeline stalls, the instinct is to blame lead quality. Usually the problem is what happens after the first contact:
 
 - **The first contact gets no response.** Silence is the default outcome of a cold message, not a rejection. Treating it as a "no" ends the conversation before it starts.
 - **Follow-up is inconsistent.** Some leads get three touches, others get none, and it depends on how busy the week was.
@@ -47,7 +47,7 @@ None of these are sales-skill problems. They are system problems, and system pro
 
 ## The 5-Stage Follow-Up Framework
 
-A lead should always be in exactly one stage, and each stage should have a defined action. Here is a simple framework you can use in any CRM, or even in a basic board.
+A lead should always be in exactly one stage, and each stage should have a defined action. Use this framework in a CRM or a basic board.
 
 ### 1. New Lead
 
@@ -73,13 +73,13 @@ The point of the framework is not complexity. It is clarity: at any moment you c
 
 ## How Long Should You Wait Between Follow-Ups?
 
-There is no universal magic number, but a practical cadence helps you avoid two extremes: following up so fast that you annoy people, or so slowly that they forget you. A reasonable starting point for B2B outreach looks like this:
+There is no universal magic number, but a practical cadence helps avoid two problems: following up too quickly or waiting so long that the prospect forgets you. A reasonable starting point for B2B outreach:
 
-- **Day 0 — First message.** A short, personalized opener that shows you looked at their business and states one clear reason for reaching out.
-- **Day 2 — Short follow-up.** A light nudge. Something easy to reply to, such as a yes/no question.
-- **Day 5 — Value-based follow-up.** Share something useful: a quick observation about their business, a small idea, or a relevant example. Give before you ask.
-- **Day 9 — New angle.** Approach the same problem from a different side. If the first message was about getting more customers, this one might be about saving time or reducing manual work.
-- **Day 14 — Breakup message.** A polite, final message that closes the loop and leaves the door open.
+- **Day 0: First message.** A short, personalized opener that shows you looked at their business and states one clear reason for reaching out.
+- **Day 2: Short follow-up.** A light nudge. Something easy to reply to, such as a yes/no question.
+- **Day 5: Value-based follow-up.** Share something useful: a quick observation about their business, a small idea, or a relevant example. Give before you ask.
+- **Day 9: New angle.** Approach the same problem from a different side. If the first message was about getting more customers, this one might be about saving time or reducing manual work.
+- **Day 14: Breakup message.** A polite, final message that closes the loop and leaves the door open.
 
 **Important: this cadence is a starting point, not a formula to push past someone's boundaries.** Adjust it to your market, your offer, and the relationship. Always respect consent, the rules of the platform you use (including WhatsApp's policies on business messaging), and the data-protection and marketing regulations that apply where your prospects are. If someone asks you to stop, or signals clearly that they are not interested, stop immediately.
 
@@ -87,7 +87,7 @@ There is no universal magic number, but a practical cadence helps you avoid two 
 
 The hardest part of follow-up is not sending messages. It is sending messages that feel relevant to the person reading them. AI can prepare the work, but it should not become an autopilot that speaks for you.
 
-Here are six practical uses:
+Six practical uses:
 
 - **Analyze the company.** Feed it the information you already have (category, website, reviews, services) and ask for a two-line summary of what the business does and who it serves.
 - **Identify context.** Ask what is likely to matter to this type of business right now: seasonality, competition, common bottlenecks. Use this to choose your angle.
@@ -96,7 +96,7 @@ Here are six practical uses:
 - **Summarize conversations.** After a long WhatsApp thread, condense it into the key facts: what they asked, what they objected to, what was promised.
 - **Suggest the next step.** Based on the stage and the last message, get a recommended next action and a draft to review.
 
-Keep this honest and effective:
+To keep it honest and effective:
 
 1. **Review before sending.** AI can misread a business or invent details. A human should always confirm that what is being said is accurate.
 2. **Only use facts you actually have.** Personalization built on guesses damages trust faster than a generic message.
@@ -104,11 +104,11 @@ Keep this honest and effective:
 
 ## The WhatsApp + CRM Workflow
 
-A follow-up system only works if the pieces connect. Here is the full flow, from first search to closed deal:
+A follow-up system only works if the pieces connect. The full flow, from first search to closed deal:
 
 **Google Maps → Lead → AI Enrichment → CRM → WhatsApp → Follow-up → Deal**
 
-In practice, it works like this:
+The workflow runs in this order:
 
 1. **Google Maps → Lead.** Search by business type and location and collect businesses that match your ideal customer, with their contact details.
 2. **AI Enrichment.** Add context (what the business does, how it presents itself, what angle might fit) so your first message is relevant from the start.
