@@ -21,16 +21,16 @@ export const Header: React.FC<HeaderProps> = ({ currentLocale, alternateUrl }) =
   const navLinks = isPt
     ? [
         { label: "Plataforma", href: SITE_CONFIG.domain, external: true },
-        { label: "CRM Visual", href: SITE_CONFIG.domain, external: true },
-        { label: "WhatsApp", href: SITE_CONFIG.domain, external: true },
-        { label: "Preços", href: SITE_CONFIG.domain, external: true },
+        { label: "CRM Visual", href: "/pt/blog/como-estruturar-pipeline-crm-vendas" },
+        { label: "WhatsApp", href: "/pt/blog/como-prospeccionar-whatsapp-sem-bloqueio-guia" },
+        { label: "Tutorial", href: "/pt/blog/tutorial-passo-a-passo-leadsx1b" },
         { label: "Blog", href: "/pt/blog", active: true }
       ]
     : [
         { label: "Platform", href: SITE_CONFIG.domain, external: true },
-        { label: "Visual CRM", href: SITE_CONFIG.domain, external: true },
-        { label: "WhatsApp", href: SITE_CONFIG.domain, external: true },
-        { label: "Pricing", href: SITE_CONFIG.domain, external: true },
+        { label: "Visual CRM", href: "/blog/b2b-sales-pipeline-crm-best-practices" },
+        { label: "WhatsApp", href: "/blog/cold-outreach-whatsapp-sales-guide" },
+        { label: "Tutorial", href: "/blog/leadsx1b-complete-step-by-step-tutorial" },
         { label: "Blog", href: "/blog", active: true }
       ];
 
@@ -38,8 +38,8 @@ export const Header: React.FC<HeaderProps> = ({ currentLocale, alternateUrl }) =
     <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/95 backdrop-blur-md transition-colors">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand Logo (Autograph / Linear Editorial Style) */}
-        <a
-          href={SITE_CONFIG.domain}
+        <Link
+          href={isPt ? "/pt/blog" : "/blog"}
           className="flex items-center gap-2.5 font-bold tracking-tight text-slate-900 transition-opacity hover:opacity-90"
         >
           <div className="flex items-center gap-2">
@@ -51,7 +51,7 @@ export const Header: React.FC<HeaderProps> = ({ currentLocale, alternateUrl }) =
               Insights
             </span>
           </div>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8 text-xs font-medium uppercase tracking-wider text-slate-600">
