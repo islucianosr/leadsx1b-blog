@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   });
 
   return {
-    title: `${post.title} | Leadsx1B Insights`,
+    title: post.seo.metaTitle,
     description: post.seo.metaDescription,
     keywords: post.seo.keywords,
     alternates: {
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       languages: alternatesLanguages
     },
     openGraph: {
-      title: `${post.title} | Leadsx1B Insights`,
+      title: post.seo.ogTitle || post.title,
       description: post.seo.metaDescription,
       url: `${SITE_CONFIG.blogDomain}/blog/${post.slug}`,
       siteName: SITE_CONFIG.name,
@@ -52,9 +52,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: "article",
       publishedTime: `${post.dateISO}T08:00:00.000Z`,
       authors: [post.author.name],
-      images: [{ url: getArticleImageUrl(post), width: 1200, height: 630, alt: post.title }]
+      images: [{ url: getArticleImageUrl(post), width: 1200, height: 630, alt: post.seo.ogImageAlt || post.title }]
     },
-    twitter: { card: "summary_large_image", title: `${post.title} | Leadsx1B Insights`, description: post.seo.metaDescription, images: [getArticleImageUrl(post)] }
+    twitter: { card: "summary_large_image", title: post.seo.ogTitle || post.title, description: post.seo.metaDescription, images: [getArticleImageUrl(post)] }
   };
 }
 
@@ -132,6 +132,16 @@ export default function BlogPostEnPage({ params }: PageProps) {
             {post.excerpt}
           </p>
 
+          {post.tags.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {post.tags.map((tag) => (
+                <span key={tag} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-[11px] font-semibold text-slate-600">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+
           <div className="flex items-center gap-3 pt-4 border-t border-slate-100">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-white font-bold text-xs">
               {post.author.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
@@ -144,7 +154,7 @@ export default function BlogPostEnPage({ params }: PageProps) {
         </header>
 
         <figure className="max-w-5xl overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-sm">
-          <img src={post.coverImage} alt={post.title} width={1200} height={630} className="aspect-[1200/630] w-full object-cover" />
+          <img src={post.coverImage} alt={post.seo.ogImageAlt || post.title} width={1200} height={630} className="aspect-[1200/630] w-full object-cover" />
         </figure>
 
         {/* Article Layout with Sidebar */}

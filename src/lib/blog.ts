@@ -15,6 +15,8 @@ export interface PostSEO {
   metaDescription: string;
   keywords: string[];
   ogImage: string;
+  ogTitle?: string;
+  ogImageAlt?: string;
 }
 
 export interface TableOfContentItem {
@@ -35,6 +37,7 @@ export interface BlogPost {
   dateISO: string;
   readTime: string;
   featured?: boolean;
+  tags: string[];
   content: string;
   headings: TableOfContentItem[];
   seo: PostSEO;
@@ -142,6 +145,7 @@ export function getAllPosts(locale: Locale): BlogPost[] {
       dateISO: toISODate(data.date),
       readTime: data.readTime || calculateReadTime(content, locale),
       featured: Boolean(data.featured),
+      tags: Array.isArray(data.tags) ? data.tags : [],
       content,
       headings: extractHeadings(content),
       seo: data.seo || {

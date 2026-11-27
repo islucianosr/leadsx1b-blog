@@ -232,18 +232,18 @@ export function generateBlogJsonLdGraph(locale: Locale, post?: BlogPost) {
 
   graph.push(
     {
-      "@type": "BlogPosting",
+      "@type": "Article",
       "@id": `${url}#blogposting`,
       headline: post.title,
       description: post.seo.metaDescription,
       image: [getArticleImageUrl(post)],
       datePublished: dateTime,
       dateModified: dateTime,
+      articleSection: post.category,
       inLanguage: isPt ? "pt-BR" : "en-US",
       author: {
-        "@type": "Person",
-        name: post.author.name,
-        jobTitle: post.author.role,
+        "@type": "Organization",
+        name: "Leadsx1B",
       },
       publisher: { "@id": `${appUrl}/#organization` },
       isPartOf: { "@id": `${blogUrl}/#blog` },
