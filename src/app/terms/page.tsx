@@ -18,7 +18,7 @@ const sections: LegalSection[] = [
 export const metadata: Metadata = {
   title: "Terms of Use | Leadsx1B Blog",
   description: "Terms for reading and using the Leadsx1B editorial blog.",
-  alternates: { canonical: `${SITE_CONFIG.blogDomain}/terms`, languages: { en: `${SITE_CONFIG.blogDomain}/terms`, pt: `${SITE_CONFIG.blogDomain}/pt/termos`, "x-default": `${SITE_CONFIG.blogDomain}/terms` } },
+  alternates: { canonical: `${SITE_CONFIG.blogDomain}/terms`, languages: { en: `${SITE_CONFIG.blogDomain}/terms`, "pt-BR": `${SITE_CONFIG.blogDomain}/pt/termos`, "x-default": `${SITE_CONFIG.blogDomain}/terms` } },
   openGraph: { title: "Terms of Use | Leadsx1B Blog", description: "Terms for reading and using the Leadsx1B editorial blog.", url: `${SITE_CONFIG.blogDomain}/terms`, siteName: "Leadsx1B", type: "website", images: [{ url: SITE_CONFIG.defaultOgImage, width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image", title: "Terms of Use | Leadsx1B Blog", description: "Terms for reading and using the Leadsx1B editorial blog.", images: [SITE_CONFIG.defaultOgImage] },
 };

@@ -7,33 +7,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const listings: MetadataRoute.Sitemap = [
     {
       url: `${base}/blog`,
+      lastModified: "2026-11-27",
       changeFrequency: "weekly",
-      alternates: { languages: { en: `${base}/blog`, pt: `${base}/pt/blog`, "x-default": `${base}/blog` } },
+      alternates: { languages: { en: `${base}/blog`, "pt-BR": `${base}/pt/blog`, "x-default": `${base}/blog` } },
     },
     {
       url: `${base}/pt/blog`,
+      lastModified: "2026-11-27",
       changeFrequency: "weekly",
-      alternates: { languages: { en: `${base}/blog`, pt: `${base}/pt/blog`, "x-default": `${base}/blog` } },
+      alternates: { languages: { en: `${base}/blog`, "pt-BR": `${base}/pt/blog`, "x-default": `${base}/blog` } },
     },
     {
       url: `${base}/privacy`,
+      lastModified: "2026-11-27",
       changeFrequency: "yearly",
-      alternates: { languages: { en: `${base}/privacy`, pt: `${base}/pt/privacidade`, "x-default": `${base}/privacy` } },
+      alternates: { languages: { en: `${base}/privacy`, "pt-BR": `${base}/pt/privacidade`, "x-default": `${base}/privacy` } },
     },
     {
       url: `${base}/terms`,
+      lastModified: "2026-11-27",
       changeFrequency: "yearly",
-      alternates: { languages: { en: `${base}/terms`, pt: `${base}/pt/termos`, "x-default": `${base}/terms` } },
+      alternates: { languages: { en: `${base}/terms`, "pt-BR": `${base}/pt/termos`, "x-default": `${base}/terms` } },
     },
     {
       url: `${base}/pt/privacidade`,
+      lastModified: "2026-11-27",
       changeFrequency: "yearly",
-      alternates: { languages: { en: `${base}/privacy`, pt: `${base}/pt/privacidade`, "x-default": `${base}/privacy` } },
+      alternates: { languages: { en: `${base}/privacy`, "pt-BR": `${base}/pt/privacidade`, "x-default": `${base}/privacy` } },
     },
     {
       url: `${base}/pt/termos`,
+      lastModified: "2026-11-27",
       changeFrequency: "yearly",
-      alternates: { languages: { en: `${base}/terms`, pt: `${base}/pt/termos`, "x-default": `${base}/terms` } },
+      alternates: { languages: { en: `${base}/terms`, "pt-BR": `${base}/pt/termos`, "x-default": `${base}/terms` } },
     },
   ];
 
@@ -46,11 +52,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return {
       url,
+      lastModified: post.dateISO,
       changeFrequency: "monthly",
       alternates: {
         languages: {
           [post.locale]: url,
-          ...(alternateUrl ? { [isPt ? "en" : "pt"]: alternateUrl } : {}),
+          ...(alternateUrl ? { [isPt ? "en" : "pt-BR"]: alternateUrl } : {}),
           "x-default": isPt && alternateUrl ? alternateUrl : url,
         },
       },

@@ -300,6 +300,7 @@ The workflow runs in this order:
 6. **Deal.** Interested leads move into negotiation, and outcomes (won or lost) are recorded so the system improves over time.
 
 This is the workflow Leadsx1B is built around: finding leads from Google Maps, organizing them, and preparing WhatsApp outreach so that the process from "found a lead" to "started a conversation" is one connected flow instead of five separate tools.
+For a practical pipeline structure, see [how to build a high-velocity B2B sales pipeline](https://blog.leads1xb.pro/blog/b2b-sales-pipeline-crm-best-practices).
 
 ## 5 Follow-Up Messages You Can Actually Use
 
@@ -354,6 +355,7 @@ The approach is simple:
 5. Stop when it is time to stop.
 
 If you want to see this workflow in action, from Google Maps search to AI-enriched leads to WhatsApp-ready messages, you can try Leadsx1B for free at **leads1xb.pro**.
+If you prefer a setup-first walkthrough, follow the [step-by-step Leadsx1B tutorial](https://blog.leads1xb.pro/blog/leadsx1b-complete-step-by-step-tutorial).
 
 Build the system once, and let it handle the remembering, so you can spend your time on the conversations that actually close deals.
 
@@ -515,6 +517,7 @@ O fluxo segue esta ordem:
 6. **Venda.** Leads interessados passam para negociação e os resultados são registrados.
 
 É esse o fluxo usado no Leadsx1B: encontrar leads no Google Maps, organizá-los e preparar o contato pelo WhatsApp em uma única operação.
+Para definir as etapas da operação, veja [como estruturar um pipeline de vendas B2B](https://blog.leads1xb.pro/pt/blog/como-estruturar-pipeline-crm-vendas).
 
 ## 5 Mensagens de Follow-Up Prontas para Adaptar
 
@@ -569,6 +572,7 @@ Comece por estas cinco ações:
 5. Pare quando é hora de parar.
 
 Para ver este fluxo em ação, da pesquisa no Google Maps aos leads enriquecidos e mensagens prontas para o WhatsApp, experimente o Leadsx1B gratuitamente em **leads1xb.pro**.
+Se quiser configurar a plataforma passo a passo, use o [tutorial completo do Leadsx1B](https://blog.leads1xb.pro/pt/blog/tutorial-passo-a-passo-leadsx1b).
 
 Monte o sistema uma vez e deixe-o cuidar do lembrete, para que você possa dedicar seu tempo às conversas que realmente fecham negócios.
 

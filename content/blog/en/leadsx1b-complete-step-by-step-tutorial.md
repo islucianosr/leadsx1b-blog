@@ -3,7 +3,7 @@ title: "Step-by-Step Tutorial: From Zero to Your First Closed Deal with Leadsx1B
 slug: "leadsx1b-complete-step-by-step-tutorial"
 locale: "en"
 alternateSlug: "tutorial-passo-a-passo-leadsx1b"
-category: "Tutoriais / Guides"
+category: "Guides & Tutorials"
 excerpt: "The complete onboarding guide to configure your workspace, pull high-intent leads from Google Maps, connect WhatsApp, and launch your first outbound campaign."
 coverImage: "/images/blog-tutorial-guide.svg"
 author:

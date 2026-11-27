@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.blogDomain}/pt/blog`,
     languages: {
       en: `${SITE_CONFIG.blogDomain}/blog`,
-      pt: `${SITE_CONFIG.blogDomain}/pt/blog`,
+      "pt-BR": `${SITE_CONFIG.blogDomain}/pt/blog`,
       "x-default": `${SITE_CONFIG.blogDomain}/blog`
     }
   },
@@ -77,23 +77,12 @@ export default function BlogPtPage() {
             {/* Social proof & newsletter card */}
             <div className="lg:col-span-4 bg-slate-50 border border-slate-200/80 rounded-2xl p-5 space-y-4">
               <div className="flex items-center gap-3">
-                <div className="flex -space-x-2 overflow-hidden">
-                  <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-800 text-white text-[10px] font-bold border-2 border-white">
-                    RA
-                  </span>
-                  <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-violet-700 text-white text-[10px] font-bold border-2 border-white">
-                    MS
-                  </span>
-                  <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-white text-[10px] font-bold border-2 border-white">
-                    BM
-                  </span>
-                </div>
                 <div>
                   <p className="text-xs font-bold text-slate-800">
-                    +5.000 líderes comerciais
+                    O playbook outbound da Leadsx1B
                   </p>
                   <p className="text-[11px] text-slate-500">
-                    Guias práticos de prospecção e vendas
+                    Guias práticos de prospecção, pipeline e vendas
                   </p>
                 </div>
               </div>
@@ -192,29 +181,29 @@ export default function BlogPtPage() {
           <div className="lg:col-span-7 flex flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50 p-8 space-y-6">
             <div>
               <h3 className="text-lg font-bold text-slate-900">
-                Recomendado por mais de 2.000 líderes e operações comerciais
+                Feito para um outbound focado e repetível
               </h3>
               <p className="text-xs text-slate-500 mt-1">
-                Empresas B2B, agências e consultorias que escalaram sua prospecção ativa com o Leadsx1B.
+                Conecte descoberta de leads, etapas do CRM e conversas no WhatsApp em um fluxo claro.
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-200">
               <div className="space-y-2">
-                <p className="text-xs italic text-slate-700 leading-relaxed">
-                  "Reduzimos o tempo de prospecção de 4 horas para 12 minutos ao extrair clínicas direto do Google Maps com validação de WhatsApp."
-                </p>
                 <p className="text-[11px] font-bold text-slate-900">
-                  Rodrigo Castilho — Diretor Comercial
+                  Da pesquisa à primeira conversa
+                </p>
+                <p className="text-xs text-slate-700 leading-relaxed">
+                  Extraia prospects locais, adicione contexto útil e leve leads qualificados para um pipeline visível.
                 </p>
               </div>
 
               <div className="space-y-2">
-                <p className="text-xs italic text-slate-700 leading-relaxed">
-                  "A cadência segura de WhatsApp e o pipeline integrado transformaram nossas taxas de resposta em 38% constantes."
-                </p>
                 <p className="text-[11px] font-bold text-slate-900">
-                  Letícia Duarte — Sócia em Agência B2B
+                  Faça follow-up sem perder contexto
+                </p>
+                <p className="text-xs text-slate-700 leading-relaxed">
+                  Organize etapas, próximos passos e histórico de conversas conforme as oportunidades avançam.
                 </p>
               </div>
             </div>

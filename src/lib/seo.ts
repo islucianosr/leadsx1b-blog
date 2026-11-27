@@ -60,7 +60,7 @@ export function generateHreflangTags(post: BlogPost): HrefLangLink[] {
 
   return [
     { rel: "alternate", hrefLang: "en", href: enUrl },
-    { rel: "alternate", hrefLang: "pt", href: ptUrl },
+    { rel: "alternate", hrefLang: "pt-BR", href: ptUrl },
     { rel: "alternate", hrefLang: "x-default", href: enUrl }
   ];
 }
@@ -74,7 +74,7 @@ export function getArticleImageUrl(post: BlogPost): string {
 export function generateBlogListingHreflang(): HrefLangLink[] {
   return [
     { rel: "alternate", hrefLang: "en", href: `${SITE_CONFIG.blogDomain}/blog` },
-    { rel: "alternate", hrefLang: "pt", href: `${SITE_CONFIG.blogDomain}/pt/blog` },
+    { rel: "alternate", hrefLang: "pt-BR", href: `${SITE_CONFIG.blogDomain}/pt/blog` },
     { rel: "alternate", hrefLang: "x-default", href: `${SITE_CONFIG.blogDomain}/blog` }
   ];
 }

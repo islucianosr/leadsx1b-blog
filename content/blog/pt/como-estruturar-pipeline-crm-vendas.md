@@ -7,9 +7,9 @@ category: "CRM & Pipeline"
 excerpt: "Aprenda a organizar cada etapa do seu funil comercial, eliminar gargalos de follow-up e manter seu time focado nas oportunidades mais quentes."
 coverImage: "/images/blog-crm-pipeline.svg"
 author:
-  name: "Bruno Menezes"
-  role: "Consultor de Operações Comerciais"
-  avatar: "/images/author-bruno.jpg"
+  name: "Equipe Leadsx1B"
+  role: "Equipe Editorial"
+  avatar: "/images/author-default.jpg"
 date: "2026-11-12"
 readTime: "6 min de leitura"
 featured: false

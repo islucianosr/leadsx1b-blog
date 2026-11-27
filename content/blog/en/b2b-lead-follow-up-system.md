@@ -7,9 +7,9 @@ category: "CRM & Pipeline"
 excerpt: "Turn cold leads into sales with a 5-stage follow-up system, a respectful WhatsApp cadence, AI personalization, and a connected CRM workflow."
 coverImage: "/images/blog-b2b-lead-follow-up.svg"
 author:
-  name: "Bruno Menezes"
-  role: "Sales Operations Consultant"
-  avatar: "/images/author-bruno.jpg"
+  name: "Leadsx1B Team"
+  role: "Editorial Team"
+  avatar: "/images/author-default.jpg"
 date: "2026-11-27"
 readTime: "8-10 min read"
 featured: true
@@ -118,6 +118,7 @@ The workflow runs in this order:
 6. **Deal.** Interested leads move into negotiation, and outcomes (won or lost) are recorded so the system improves over time.
 
 This is the workflow Leadsx1B is built around: finding leads from Google Maps, organizing them, and preparing WhatsApp outreach so that the process from "found a lead" to "started a conversation" is one connected flow instead of five separate tools.
+For a practical pipeline structure, see [how to build a high-velocity B2B sales pipeline](https://blog.leads1xb.pro/blog/b2b-sales-pipeline-crm-best-practices).
 
 ## 5 Follow-Up Messages You Can Actually Use
 
@@ -172,5 +173,6 @@ The approach is simple:
 5. Stop when it is time to stop.
 
 If you want to see this workflow in action, from Google Maps search to AI-enriched leads to WhatsApp-ready messages, you can try Leadsx1B for free at **leads1xb.pro**.
+If you prefer a setup-first walkthrough, follow the [step-by-step Leadsx1B tutorial](https://blog.leads1xb.pro/blog/leadsx1b-complete-step-by-step-tutorial).
 
 Build the system once, and let it handle the remembering, so you can spend your time on the conversations that actually close deals.

@@ -7,9 +7,9 @@ category: "CRM & Pipeline"
 excerpt: "Transforme leads frios em vendas com um sistema de follow-up em 5 etapas, cadência no WhatsApp, personalização com IA e um fluxo integrado ao CRM."
 coverImage: "/images/blog-b2b-lead-follow-up.svg"
 author:
-  name: "Bruno Menezes"
-  role: "Consultor de Operações Comerciais"
-  avatar: "/images/author-bruno.jpg"
+  name: "Equipe Leadsx1B"
+  role: "Equipe Editorial"
+  avatar: "/images/author-default.jpg"
 date: "2026-11-27"
 readTime: "8-10 min de leitura"
 featured: true
@@ -118,6 +118,7 @@ O fluxo segue esta ordem:
 6. **Venda.** Leads interessados passam para negociação e os resultados são registrados.
 
 É esse o fluxo usado no Leadsx1B: encontrar leads no Google Maps, organizá-los e preparar o contato pelo WhatsApp em uma única operação.
+Para definir as etapas da operação, veja [como estruturar um pipeline de vendas B2B](https://blog.leads1xb.pro/pt/blog/como-estruturar-pipeline-crm-vendas).
 
 ## 5 Mensagens de Follow-Up Prontas para Adaptar
 
@@ -172,5 +173,6 @@ Comece por estas cinco ações:
 5. Pare quando é hora de parar.
 
 Para ver este fluxo em ação, da pesquisa no Google Maps aos leads enriquecidos e mensagens prontas para o WhatsApp, experimente o Leadsx1B gratuitamente em **leads1xb.pro**.
+Se quiser configurar a plataforma passo a passo, use o [tutorial completo do Leadsx1B](https://blog.leads1xb.pro/pt/blog/tutorial-passo-a-passo-leadsx1b).
 
 Monte o sistema uma vez e deixe-o cuidar do lembrete, para que você possa dedicar seu tempo às conversas que realmente fecham negócios.

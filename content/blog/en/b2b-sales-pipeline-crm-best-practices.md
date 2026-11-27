@@ -7,9 +7,9 @@ category: "CRM & Pipeline"
 excerpt: "Learn how to structure every stage of your sales funnel, eliminate follow-up friction, and keep your reps laser-focused on top-tier revenue deals."
 coverImage: "/images/blog-crm-pipeline.svg"
 author:
-  name: "Bruno Menezes"
-  role: "Sales Operations Consultant"
-  avatar: "/images/author-bruno.jpg"
+  name: "Leadsx1B Team"
+  role: "Editorial Team"
+  avatar: "/images/author-default.jpg"
 date: "2026-11-12"
 readTime: "6 min read"
 featured: false
